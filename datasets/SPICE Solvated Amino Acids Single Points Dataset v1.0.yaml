@@ -1,0 +1,95 @@
+alias_keywords:
+  psi4:
+    spice_default: '30'
+citations:
+- acs_citation: Eastman, P., Behara, P.K., Dotson, D.L. et al. SPICE, A Dataset of
+    Drug-like Molecules and Peptides for Training Machine Learning Potentials. Sci
+    Data 10, 11 (2023). https://doi.org/10.1038/s41597-022-01882-6
+  bibtex: "@article{eastman_spice_2023, title = {{SPICE}, {A} {Dataset} of {Drug}-like\
+    \ {Molecules} and {Peptides} for {Training} {Machine} {Learning} {Potentials}},\
+    \ volume = {10}, copyright = {2022 The Author(s)}, issn = {2052-4463}, url = {https://www.nature.com/articles/s41597-022-01882-6},\
+    \ doi = {10.1038/s41597-022-01882-6}, abstract = {Machine learning potentials\
+    \ are an important tool for molecular simulation, but their development is held\
+    \ back by a shortage of high quality datasets to train them on. We describe the\
+    \ SPICE dataset, a new quantum chemistry dataset for training potentials relevant\
+    \ to simulating drug-like small molecules interacting with proteins. It contains\
+    \ over 1.1 million conformations for a diverse set of small molecules, dimers,\
+    \ dipeptides, and solvated amino acids. It includes 15 elements, charged and uncharged\
+    \ molecules, and a wide range of covalent and non-covalent interactions. It provides\
+    \ both forces and energies calculated at the \u03C9B97M-D3(BJ)/def2-TZVPPD level\
+    \ of theory, along with other useful quantities such as multipole moments and\
+    \ bond orders. We train a set of machine learning potentials on it and demonstrate\
+    \ that they can achieve chemical accuracy across a broad region of chemical space.\
+    \ It can serve as a valuable resource for the creation of transferable, ready\
+    \ to use potential functions for use in molecular simulations.}, language = {en},\
+    \ number = {1}, urldate = {2023-01-07}, journal = {Scientific Data}, author =\
+    \ {Eastman, Peter and Behara, Pavan Kumar and Dotson, David L. and Galvelis, Raimondas\
+    \ and Herr, John E. and Horton, Josh T. and Mao, Yuezhi and Chodera, John D. and\
+    \ Pritchard, Benjamin P. and Wang, Yuanqing and De Fabritiis, Gianni and Markland,\
+    \ Thomas E.}, month = jan, year = {2023}, note = {Number: 1 Publisher: Nature\
+    \ Publishing Group}, keywords = {Proteins, Molecular dynamics, Computational chemistry,\
+    \ Density functional theory}, pages = {11}, }"
+  doi: 10.1038/s41597-022-01882-6
+  url: https://www.nature.com/articles/s41597-022-01882-6
+collection: dataset
+collection_type: DataSet
+creation_date: '2021-11-10'
+data_points: ''
+dataset_name: SPICE Solvated Amino Acids Single Points Dataset v1.0
+default_benchmark: null
+default_driver: gradient
+default_keywords: {}
+default_program: psi4
+default_units: kcal / mol
+description: 'Data source: https://github.com/openmm/qmdataset/tree/main/solvated-amino-acids'
+elements:
+- C
+- H
+- O
+- N
+- S
+group: default
+history:
+- - gradient
+  - psi4
+  - wb97m-d3bj
+  - def2-tzvppd
+  - spice_default
+- - gradient
+  - dftd3
+  - wb97m-d3bj
+  - null
+  - null
+- - gradient
+  - psi4
+  - wb97m
+  - null
+  - null
+history_keys:
+- driver
+- program
+- method
+- basis
+- keywords
+id: '328'
+long_description: 'Data source: https://github.com/openmm/qmdataset/tree/main/solvated-amino-acids'
+long_description_url: https://github.com/openforcefield/qca-dataset-submission/tree/master/submissions/2021-11-08-QMDataset-Solvated-Amino-Acids-single-points
+name: SPICE Solvated Amino Acids Single Points Dataset v1.0
+provenance:
+  AmberToolsToolkitWrapper: '21.0'
+  OpenEyeToolkitWrapper: 2021.1.1
+  RDKitToolkitWrapper: 2021.03.5
+  openff-qcsubmit: 0.2.4
+  openff-toolkit: 0.10.1
+sampling: ''
+short_description: QM dataset for ML
+submitter: Josh Horton, Pavan Behara, David Dotson
+tagline: QM dataset for ML
+tags:
+- openff
+theory_level: ''
+view_available: false
+view_metadata: null
+view_url_hdf5: null
+view_url_plaintext: null
+visibility: true

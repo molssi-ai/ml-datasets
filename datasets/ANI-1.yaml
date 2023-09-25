@@ -1,0 +1,65 @@
+alias_keywords: {}
+blake2b_checksum: 593ad8207192b1e141afe9cf007dc6348d3253cbb9935fb3391ff8bf9f26fb8800926ae643cb99efb2000063c6de6e74477410da948f8efd85b28a677d424651
+citations:
+- acs_citation: 'Smith, J. S.; Isayev, O. &amp; Roitberg, A. E. ANI-1: an extensible
+    neural network potential with DFT accuracy at force field computational cost.
+    <em>Chem. Sci., </em><b>2017</b><i>, 8</i>, 3192-3203.'
+  bibtex: "\n@article{smith2017ani,\n  title={ANI-1: an extensible neural network\
+    \ potential with DFT accuracy at force field computational cost},\n  author={Smith,\
+    \ Justin S and Isayev, Olexandr and Roitberg, Adrian E},\n  journal={Chemical\
+    \ science},\n  volume={8},\n  number={4},\n  pages={3192--3203},\n  year={2017},\n\
+    \  publisher={Royal Society of Chemistry}\n}\n"
+  doi: 10.1039/C6SC05720A
+  url: https://pubs.rsc.org/en/content/articlelanding/2017/sc/c6sc05720a
+- acs_citation: Smith, J. S.; Isayev, O. &amp; Roitberg, A. E. ANI-1, A data set of
+    20 million calculated off-equilibrium conformations for organic molecules <em>Scientific
+    data, </em><b>2017</b><i>, 4</i>, 170193.
+  bibtex: "@article{smith2017ani,\n  title={ANI-1, A data set of 20 million calculated\
+    \ off-equilibrium conformations for organic molecules},\n  author={Smith, Justin\
+    \ S and Isayev, Olexandr and Roitberg, Adrian E},\n  journal={Scientific data},\n\
+    \  volume={4},\n  pages={170193},\n  year={2017},\n  publisher={Nature Publishing\
+    \ Group}\n}\n"
+  doi: 10.1038/sdata.2017.193
+  url: https://www.nature.com/articles/sdata2017193
+collection: dataset
+data_points: 22,057,374
+default_benchmark: null
+default_driver: energy
+default_keywords: {}
+default_program: null
+default_units: kcal / mol
+description: "Off-equilibrium conformations and energies of 57,462 organic molecules\
+  \ with up to 8 heavy atoms. Molecules are sampled from the GDB-11 dataset. Configurations\
+  \ are generated with normal mode sampling, evaluated at the \u03C9B97x/6\u201331G(d)\
+  \ level of theory. All molecules are neutral singlets. This dataset was originally\
+  \ sourced from <a href=\"https://github.com/isayev/ANI1_dataset\">GitHub</a>."
+elements:
+- C
+- H
+- N
+- O
+group: default
+hdf5_size: 11,024
+history: []
+history_keys:
+- driver
+- program
+- method
+- basis
+- keywords
+id: '214'
+kvs: []
+labels:
+- energy
+name: ANI-1
+plaintext_size: 8,873
+provenance: {}
+sampling: NMS
+tagline: 22 million off-equilibrium conformations and enegies for organic molecules
+tags:
+- organic
+theory_level: DFT
+view_available: true
+view_url_hdf5: https://zenodo.org/record/3585840/files/214.hdf5.gz?download=1
+view_url_plaintext: https://zenodo.org/record/3585840/files/214.tar.gz?download=1
+visibility: true

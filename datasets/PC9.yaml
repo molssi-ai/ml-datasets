@@ -1,0 +1,110 @@
+alias_keywords:
+  psi4:
+    scf_default: '1'
+blake2b_checksum: 93f69332a1edbf79a3fc066a6b8c663065cf0f6fa4a0fff9d696239377379f8222ea5df61ebfb1384e9b8274d1bf502317b67b99a78426a2ed88f33f54af2544
+citations:
+- acs_citation: 'Nakata, M. &amp; Shimazaki, T. PubChemQC project: A large-scale first-principles
+    electronic structure database for data-driven chemistry. <em>J. Chem. Inf. Model.,
+    </em><b>2017</b><i>, 57</i>, 1300-1308.'
+  bibtex: "\n@article{nakata2017pubchemqc,\n  title={PubChemQC project: A large-scale\
+    \ first-principles electronic structure database for data-driven chemistry},\n\
+    \  author={Nakata, Maho and Shimazaki, Tomomi},\n  journal={Journal of chemical\
+    \ information and modeling},\n  volume={57},\n  number={6},\n  pages={1300--1308},\n\
+    \  year={2017},\n  publisher={ACS Publications}\n}\n"
+  doi: 10.1021/acs.jcim.7b00083
+  url: https://pubs.acs.org/doi/abs/10.1021/acs.jcim.7b00083
+- acs_citation: "Glavatskikh, M.; Leguy, J.; Hunault, G.; Cauchy, T. &amp; Da Mota,\
+    \ B. Dataset\u2019s chemical diversity limits the generalizability of machine\
+    \ learning predictions. <em>J. Cheminformatics, </em><b>2019</b><i>, 11</i>, 69."
+  bibtex: "\n@article{glavatskikh2019dataset,\n  title={Dataset\u2019s chemical diversity\
+    \ limits the generalizability of machine learning predictions},\n  author={Glavatskikh,\
+    \ Marta and Leguy, Jules and Hunault, Gilles and Cauchy, Thomas and Da Mota, Benoit},\n\
+    \  journal={J. Cheminformatics},\n  volume={11},\n  number={1},\n  pages={69},\n\
+    \  year={2019},\n  publisher={Springer}\n}\n"
+  doi: 10.1186/s13321-019-0391-2
+  url: https://jcheminf.biomedcentral.com/articles/10.1186/s13321-019-0391-2
+collection: dataset
+data_points: 99,234
+default_benchmark: null
+default_driver: energy
+default_keywords:
+  psi4: scf_default
+default_program: psi4
+default_units: kcal / mol
+description: Small organic molecules with up to 9 heavy atoms sampled from PubChemQC.
+  This dataset is analagous to QM9, but represents greater chemical diversity. Ground
+  state and orbital properties are available at the B3LYP/6-31G* level of theory.
+  All molecules are neutral, but some are doublets and triplets. This dataset is also
+  available on FigShare.
+elements:
+- C
+- H
+- F
+- N
+- O
+group: default
+hdf5_size: '79'
+history:
+- - energy
+  - dftd3
+  - b3lyp-d3m(bj)
+  - null
+  - scf_default
+- - energy
+  - psi4
+  - b3lyp
+  - def2-tzvp
+  - scf_default
+- - energy
+  - psi4
+  - hf
+  - def2-tzvp
+  - scf_default
+- - energy
+  - psi4
+  - pbe
+  - def2-tzvp
+  - scf_default
+- - energy
+  - psi4
+  - svwn
+  - def2-tzvp
+  - scf_default
+- - energy
+  - dftd3
+  - pbe-d3m(bj)
+  - null
+  - scf_default
+- - energy
+  - psi4
+  - wb97m-v
+  - def2-tzvp
+  - scf_default
+history_keys:
+- driver
+- program
+- method
+- basis
+- keywords
+id: '222'
+kvs: []
+labels:
+- energy
+- charges
+- homo
+- lumo
+- homo-1
+- lumo+1
+name: PC9
+plaintext_size: '57'
+provenance: {}
+sampling: Minima
+tagline: A diverse subset of PubChemQC containing up to 9 heavy atoms.
+tags:
+- organic
+- pubchem
+theory_level: DFT
+view_available: false
+view_url_hdf5: https://zenodo.org/record/3588369/files/222.hdf5.gz?download=1
+view_url_plaintext: https://zenodo.org/record/3588369/files/222.tar.gz?download=1
+visibility: true

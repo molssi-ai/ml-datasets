@@ -1,0 +1,311 @@
+alias_keywords:
+  psi4:
+    scf_default: '1'
+blake2b_checksum: fcbd5d57bfb9d3a15c13cb29fe1417864bd8bc9f48bab1ed2a4189e305274bd706bd9040d2f56f6e44988488e585989c21c2ff498dca6dbeaebadfb3a2336740
+citations:
+- acs_citation: ' Blum, L. C. &amp; Reymond, J.-L. 970 million druglike small molecules
+    for virtual screening in the chemical universe database GDB-13. <em>JACS, </em><b>2009</b><i>,
+    131</i>, 8732-8733.'
+  bibtex: "\n@article{blum2009970,\n  title={970 million druglike small molecules\
+    \ for virtual screening in the chemical universe database GDB-13},\n  author={Blum,\
+    \ Lorenz C and Reymond, Jean-Louis},\n  journal={Journal of the American Chemical\
+    \ Society},\n  volume={131},\n  number={25},\n  pages={8732--8733},\n  year={2009},\n\
+    \  publisher={ACS Publications}\n}\n"
+  doi: 10.1021/ja902302h
+  url: https://pubs.acs.org/doi/abs/10.1021/ja902302h
+- acs_citation: "Rupp, M.; Tkatchenko, A.; M\xFCller, K.-R. &amp; von Lilienfeld,\
+    \ O. A. Fast and Accurate Modeling of Molecular Atomization Energies with Machine\
+    \ Learning. <em>Phys. Rev. Lett., </em><b>2012</b><i>, 108</i>, 058301."
+  bibtex: "\n@article{PhysRevLett.108.058301,\n  title = {Fast and Accurate Modeling\
+    \ of Molecular Atomization Energies with Machine Learning},\n  author = {Rupp,\
+    \ Matthias and Tkatchenko, Alexandre and M\"uller, Klaus-Robert and von Lilienfeld,\
+    \ O. Anatole},\n  journal = {Phys. Rev. Lett.},\n  volume = {108},\n  issue =\
+    \ {5},\n  pages = {058301},\n  numpages = {5},\n  year = {2012},\n  month = {Jan},\n\
+    \  publisher = {American Physical Society},\n  doi = {10.1103/PhysRevLett.108.058301},\n\
+    \  url = {https://link.aps.org/doi/10.1103/PhysRevLett.108.058301}\n}\n"
+  doi: 10.1103/PhysRevLett.108.058301
+  url: https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.108.058301
+collection: dataset
+data_points: 7,165
+default_benchmark: null
+default_driver: energy
+default_keywords:
+  psi4: scf_default
+default_program: psi4
+default_units: kcal / mol
+description: Small organic molecules with up to 7 heavy atoms, sampled from GDB-13
+  and optimized at the PBE0 level of theory. All molecules are neutral singlets. This
+  dataset was sourced from <a href="http://quantum-machine.org/datasets/">quantum-machine.org</a>
+  and <a href="https://qmml.org/datasets.html">qmml.org</a>.
+elements:
+- C
+- H
+- N
+- O
+- S
+group: default
+hdf5_size: '7'
+history:
+- - energy
+  - psi4
+  - b2plyp
+  - def2-tzvp
+  - scf_default
+- - energy
+  - psi4
+  - hf
+  - def2-svp
+  - scf_default
+- - energy
+  - dftd3
+  - b3lyp-d3m
+  - null
+  - scf_default
+- - energy
+  - psi4
+  - pbe
+  - sto-3g
+  - scf_default
+- - energy
+  - psi4
+  - pbe0
+  - sto-3g
+  - scf_default
+- - energy
+  - psi4
+  - wb97m-v
+  - def2-svp
+  - scf_default
+- - energy
+  - psi4
+  - mp2
+  - aug-cc-pvdz
+  - scf_default
+- - energy
+  - psi4
+  - b3lyp
+  - aug-cc-pvtz
+  - scf_default
+- - energy
+  - dftd3
+  - b3lyp-d3m(bj)
+  - null
+  - scf_default
+- - energy
+  - psi4
+  - hf
+  - aug-cc-pvtz
+  - scf_default
+- - energy
+  - psi4
+  - wb97x-d
+  - def2-svp
+  - scf_default
+- - energy
+  - psi4
+  - hf
+  - sto-3g
+  - scf_default
+- - energy
+  - psi4
+  - wb97x-d
+  - aug-cc-pvtz
+  - scf_default
+- - energy
+  - psi4
+  - pbe
+  - aug-cc-pvtz
+  - scf_default
+- - energy
+  - psi4
+  - mp2
+  - def2-tzvp
+  - scf_default
+- - energy
+  - psi4
+  - mp2
+  - sto-3g
+  - scf_default
+- - energy
+  - psi4
+  - b3lyp
+  - aug-cc-pvdz
+  - scf_default
+- - energy
+  - psi4
+  - b3lyp
+  - def2-svp
+  - scf_default
+- - energy
+  - psi4
+  - mp2
+  - aug-cc-pvtz
+  - scf_default
+- - energy
+  - psi4
+  - wb97x-d
+  - def2-tzvp
+  - scf_default
+- - energy
+  - psi4
+  - pbe0
+  - aug-cc-pvtz
+  - scf_default
+- - energy
+  - psi4
+  - wb97m-v
+  - aug-cc-pvtz
+  - scf_default
+- - energy
+  - dftd3
+  - b2plyp-d3(bj)
+  - null
+  - scf_default
+- - energy
+  - psi4
+  - wb97m-v
+  - sto-3g
+  - scf_default
+- - energy
+  - psi4
+  - wb97m-v
+  - def2-tzvp
+  - scf_default
+- - energy
+  - dftd3
+  - b2plyp-d3m
+  - null
+  - scf_default
+- - energy
+  - psi4
+  - pbe0
+  - def2-tzvp
+  - scf_default
+- - energy
+  - psi4
+  - b3lyp
+  - sto-3g
+  - scf_default
+- - energy
+  - psi4
+  - b3lyp
+  - def2-tzvp
+  - scf_default
+- - energy
+  - dftd3
+  - b3lyp-d3
+  - null
+  - scf_default
+- - energy
+  - psi4
+  - wb97x-d
+  - aug-cc-pvdz
+  - scf_default
+- - energy
+  - psi4
+  - wb97m-v
+  - aug-cc-pvdz
+  - scf_default
+- - energy
+  - dftd3
+  - b2plyp-d3
+  - null
+  - scf_default
+- - energy
+  - psi4
+  - b2plyp
+  - def2-svp
+  - scf_default
+- - energy
+  - psi4
+  - pbe0
+  - aug-cc-pvdz
+  - scf_default
+- - energy
+  - psi4
+  - hf
+  - def2-tzvp
+  - scf_default
+- - energy
+  - psi4
+  - pbe
+  - def2-tzvp
+  - scf_default
+- - energy
+  - psi4
+  - b2plyp
+  - aug-cc-pvdz
+  - scf_default
+- - energy
+  - psi4
+  - pbe0
+  - def2-svp
+  - scf_default
+- - energy
+  - psi4
+  - b2plyp
+  - sto-3g
+  - scf_default
+- - energy
+  - psi4
+  - b2plyp
+  - aug-cc-pvtz
+  - scf_default
+- - energy
+  - psi4
+  - mp2
+  - def2-svp
+  - scf_default
+- - energy
+  - psi4
+  - wb97x-d
+  - sto-3g
+  - scf_default
+- - energy
+  - dftd3
+  - b3lyp-d3(bj)
+  - null
+  - scf_default
+- - energy
+  - psi4
+  - hf
+  - aug-cc-pvdz
+  - scf_default
+- - energy
+  - dftd3
+  - b2plyp-d3m(bj)
+  - null
+  - scf_default
+- - energy
+  - psi4
+  - pbe
+  - def2-svp
+  - scf_default
+- - energy
+  - psi4
+  - pbe
+  - aug-cc-pvdz
+  - scf_default
+history_keys:
+- driver
+- program
+- method
+- basis
+- keywords
+id: '150'
+kvs: []
+labels:
+- atomization energy
+name: QM7
+plaintext_size: '7'
+provenance: {}
+sampling: Minima
+tagline: Small organic molecules with up to 7 heavy atoms.
+tags:
+- organic
+- GDB
+theory_level: DFT
+view_available: false
+view_url_hdf5: https://zenodo.org/record/3588337/files/150.hdf5.gz?download=1
+view_url_plaintext: https://zenodo.org/record/3588337/files/150.tar.gz?download=1
+visibility: true

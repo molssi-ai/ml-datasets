@@ -1,0 +1,122 @@
+alias_keywords:
+  psi4:
+    scf_default: '1'
+blake2b_checksum: a86413d8262859168be93cde326a834609ae5736976d64d1ef40a3f5de8f40d400b0b8b961ffe060e67920ad2bfae867631ffd34bdfbf52616e7e9c33e910805
+citations:
+- acs_citation: ' Blum, L. C. &amp; Reymond, J.-L. 970 million druglike small molecules
+    for virtual screening in the chemical universe database GDB-13. <em>JACS, </em><b>2009</b><i>,
+    131</i>, 8732-8733.'
+  bibtex: "\n@article{blum2009970,\n  title={970 million druglike small molecules\
+    \ for virtual screening in the chemical universe database GDB-13},\n  author={Blum,\
+    \ Lorenz C and Reymond, Jean-Louis},\n  journal={Journal of the American Chemical\
+    \ Society},\n  volume={131},\n  number={25},\n  pages={8732--8733},\n  year={2009},\n\
+    \  publisher={ACS Publications}\n}\n"
+  doi: 10.1021/ja902302h
+  url: https://pubs.acs.org/doi/abs/10.1021/ja902302h
+- acs_citation: Ramakrishnan, R.; Dral, P. O.; Rupp, M. &amp; Von Lilienfeld, O. A.
+    Quantum chemistry structures and properties of 134 kilo molecules. <em>Sci. Data,
+    </em><b>2014</b><i>, 1</i>, 140022.
+  bibtex: "\n@article{ramakrishnan2014quantum,\n  title={Quantum chemistry structures\
+    \ and properties of 134 kilo molecules},\n  author={Ramakrishnan, Raghunathan\
+    \ and Dral, Pavlo O and Rupp, Matthias and Von Lilienfeld, O Anatole},\n  journal={Scientific\
+    \ data},\n  volume={1},\n  pages={140022},\n  year={2014},\n  publisher={Nature\
+    \ Publishing Group}\n}\n"
+  doi: 10.1038/sdata.2014.22
+  url: https://www.nature.com/articles/sdata201422
+collection: dataset
+data_points: 133,885
+default_benchmark: null
+default_driver: energy
+default_keywords:
+  psi4: scf_default
+default_program: psi4
+default_units: kcal / mol
+description: Small organic molecules with up to 9 heavy atoms sampled from GDB-17,
+  optimized at the B3LYP/6-31G(2df,p) level of theory. Ground state, orbital, and
+  thermodynamic properties are available (at the B3LYP/6-31G(2df,p) level). All molecules
+  are neutral singlets. This dataset was sourced from <a href="http://quantum-machine.org/datasets/">quantum-machine.org</a>
+  and <a href="https://qmml.org/datasets.html">qmml.org</a>.
+elements:
+- C
+- H
+- F
+- N
+- O
+group: default
+hdf5_size: '152'
+history:
+- - energy
+  - psi4
+  - hf
+  - cc-pvtz
+  - scf_default
+- - energy
+  - psi4
+  - b3lyp
+  - def2-svp
+  - scf_default
+- - energy
+  - psi4
+  - wb97x-d
+  - def2-tzvp
+  - scf_default
+- - energy
+  - psi4
+  - wb97x-d
+  - def2-svp
+  - scf_default
+- - energy
+  - psi4
+  - hf
+  - sto-3g
+  - scf_default
+- - energy
+  - psi4
+  - svwn
+  - sto-3g
+  - scf_default
+- - energy
+  - psi4
+  - wb97x-d
+  - aug-cc-pvtz
+  - scf_default
+- - energy
+  - psi4
+  - pbe
+  - sto-3g
+  - scf_default
+history_keys:
+- driver
+- program
+- method
+- basis
+- keywords
+id: '155'
+kvs: []
+labels:
+- energy
+- homo
+- lumo
+- polarizability
+- dipole
+- freqency
+- zpve
+- enthalpy
+- free energy
+- heat capacity
+- rotational constant
+name: QM9
+plaintext_size: '117'
+provenance: {}
+sampling: Minima
+tagline: Small organic molecules with up to 9 heavy atoms with electronic and thermodynamic
+  properties.
+tags:
+- organic
+- thermodynamics
+- GDB
+theory_level: DFT
+view_available: true
+view_url_hdf5: https://zenodo.org/record/3588339/files/155.hdf5.gz?download=1
+view_url_plaintext: https://zenodo.org/record/3588339/files/155.tar.gz?download=1
+visibility: true

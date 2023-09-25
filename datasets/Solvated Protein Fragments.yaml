@@ -1,0 +1,113 @@
+alias_keywords: {}
+blake2b_checksum: 46f7df3415afdd169530b50eb9326f95b1ca38309cbe7aabed15f65aff6a204a9fad0e5ef087cb6ff91b33ffe5549b0df86ce150a0d60e803ecd89f567da218a
+citations:
+- acs_citation: 'Unke, O. T. &amp; Meuwly, M. PhysNet: A Neural Network for Predicting
+    Energies, Forces, Dipole Moments, and Partial Charges.  <em>J. Chem. Theory Comput.,
+    </em><b>2019</b><i>, 15</i>, 3678-3693.'
+  bibtex: '
+
+    @article{doi:10.1021/acs.jctc.9b00181,
+
+    annote = {PMID: 31042390},
+
+    author = {Unke, Oliver T and Meuwly, Markus},
+
+    doi = {10.1021/acs.jctc.9b00181},
+
+    journal = {J. Chem. Theory Comput.},
+
+    number = {6},
+
+    pages = {3678--3693},
+
+    title = {{PhysNet: A Neural Network for Predicting Energies, Forces, Dipole Moments,
+    and Partial Charges}},
+
+    url = {https://doi.org/10.1021/acs.jctc.9b00181},
+
+    volume = {15},
+
+    year = {2019}
+
+    }
+
+    '
+  doi: 10.1021/acs.jctc.9b00181
+  url: https://doi.org/10.1021/acs.jctc.9b00181
+- acs_citation: Unke, O. T. &amp; Meuwly, M. Solvated protein fragments. <em>Zenodo,
+    </em><b>2019</b>.
+  bibtex: '
+
+    @dataset{unke_oliver_thorsten_2019_2605372,
+
+    author = {Unke, Oliver Thorsten and Meuwly, Markus},
+
+    doi = {10.5281/zenodo.2605372},
+
+    month = {mar},
+
+    publisher = {Zenodo},
+
+    title = {{Solvated protein fragments}},
+
+    url = {https://doi.org/10.5281/zenodo.2605372},
+
+    year = {2019}
+
+    }
+
+    '
+  doi: 10.5281/zenodo.2605372
+  url: https://zenodo.org/record/2605372
+collection: dataset
+data_points: 2,731,180
+default_benchmark: null
+default_driver: energy
+default_keywords: {}
+default_program: null
+default_units: kcal / mol
+description: Water-solvated protein fragements with up to 8 heavy atoms. Configurations
+  are generated from MD, evaluated at the revPBE-D3(BJ)/def2-TZVP level of theory.
+  Also included are fragment dimers and clusters of up to 40 water molecules. This
+  dataset was sourced from <a href="http://quantum-machine.org/datasets/">quantum-machine.org</a>.
+elements:
+- C
+- H
+- N
+- O
+- S
+group: default
+hdf5_size: 2,845
+history: []
+history_keys:
+- driver
+- program
+- method
+- basis
+- keywords
+id: '213'
+kvs: []
+labels:
+- energy
+- gradient
+- dipole
+name: Solvated Protein Fragments
+plaintext_size: 2,482
+provenance: {}
+sampling: MD 1000K
+tagline: Amons derived from proteins, in water.
+tags:
+- organic
+- protein
+- solvation
+- MD
+- molecular dynamics
+- fragment
+- amon
+- peptide
+- water
+theory_level: DFT
+view_available: true
+view_url_hdf5: https://zenodo.org/record/3585804/files/213.hdf5.gz?download=1
+view_url_plaintext: https://zenodo.org/record/3585804/files/213.tar.gz?download=1
+visibility: true

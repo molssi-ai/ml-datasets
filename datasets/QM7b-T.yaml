@@ -1,0 +1,293 @@
+alias_keywords:
+  psi4:
+    scf_default: '1'
+blake2b_checksum: 99e0aad977d2bbf062c0d4708f770feb8b57b74d67b00340994fed4c41f05b6ea1e66d72423a8c3fa4391e81679be31df85a77d751fd9eea981ee3cca1861b98
+citations:
+- acs_citation: Welborn, M.; Cheng, L. &amp; Miller III, T. F. Transferability in
+    machine learning for electronic structure via the molecular orbital basis. <em>J.
+    Chem. Theory Comput., </em><b>2018</b><i>, 14</i>, 4772-4779.
+  bibtex: "\n@article{welborn2018transferability,\n  title={Transferability in machine\
+    \ learning for electronic structure via the molecular orbital basis},\n  author={Welborn,\
+    \ Matthew and Cheng, Lixue and Miller III, Thomas F},\n  journal={Journal of chemical\
+    \ theory and computation},\n  volume={14},\n  number={9},\n  pages={4772--4779},\n\
+    \  year={2018},\n  publisher={ACS Publications}\n}\n"
+  doi: 10.1021/acs.jctc.8b00636
+  url: https://pubs.acs.org/doi/abs/10.1021/acs.jctc.8b00636
+- acs_citation: 'Cheng, L.; Welborn, M.; Christensen, A. S. &amp; Miller III, T. F.
+    A universal density matrix functional from molecular orbital-based machine learning:
+    Transferability across organic molecules. <em>J. Chem. Phys., </em><b>2019</b><i>,
+    150</i>, 131103.'
+  bibtex: "\n@article{cheng2019universal,\n  title={A universal density matrix functional\
+    \ from molecular orbital-based machine learning: Transferability across organic\
+    \ molecules},\n  author={Cheng, Lixue and Welborn, Matthew and Christensen, Anders\
+    \ S and Miller III, Thomas F},\n  journal={The Journal of chemical physics},\n\
+    \  volume={150},\n  number={13},\n  pages={131103},\n  year={2019},\n  publisher={AIP\
+    \ Publishing}\n}\n"
+  doi: 10.1063/1.5088393
+  url: https://aip.scitation.org/doi/full/10.1063/1.5088393
+collection: dataset
+data_points: 7,211
+default_benchmark: null
+default_driver: energy
+default_keywords:
+  psi4: scf_default
+default_program: psi4
+default_units: kcal / mol
+description: Small organic molecules with up to 7 heavy atoms corresponding to those
+  in QM7b, thermalized with 350K MD at the B3LYP/6-31g* level of theory. Energies
+  are provided at the HF/cc-pvDZ, HF/cc-pVTZ, MP2/cc-pVTZ, and CCSD(T0)/cc-pVDZ levels
+  of theory. All molecules are neutral singlets. This dataset was sourced from <a
+  href="https://data.caltech.edu/records/1177">data.caltech.edu</a>.
+elements:
+- C
+- H
+- Cl
+- N
+- O
+- S
+group: default
+hdf5_size: '7'
+history:
+- - energy
+  - psi4
+  - svwn
+  - sto-3g
+  - scf_default
+- - energy
+  - psi4
+  - b3lyp
+  - def2-svp
+  - scf_default
+- - energy
+  - psi4
+  - b2plyp
+  - sto-3g
+  - scf_default
+- - energy
+  - psi4
+  - b3lyp
+  - aug-cc-pvdz
+  - scf_default
+- - energy
+  - psi4
+  - pbe
+  - def2-svp
+  - scf_default
+- - energy
+  - psi4
+  - pbe0
+  - def2-svp
+  - scf_default
+- - energy
+  - psi4
+  - wb97m-v
+  - def2-svp
+  - scf_default
+- - energy
+  - psi4
+  - hf
+  - aug-cc-pvtz
+  - scf_default
+- - energy
+  - psi4
+  - wb97x-d
+  - aug-cc-pvtz
+  - scf_default
+- - energy
+  - psi4
+  - b3lyp
+  - aug-cc-pvtz
+  - scf_default
+- - energy
+  - psi4
+  - pbe
+  - sto-3g
+  - scf_default
+- - energy
+  - dftd3
+  - b3lyp-d3m
+  - null
+  - scf_default
+- - energy
+  - psi4
+  - b2plyp
+  - def2-svp
+  - scf_default
+- - energy
+  - psi4
+  - b3lyp
+  - def2-tzvp
+  - scf_default
+- - energy
+  - psi4
+  - b2plyp
+  - def2-tzvp
+  - scf_default
+- - energy
+  - psi4
+  - wb97x-d
+  - aug-cc-pvdz
+  - scf_default
+- - energy
+  - psi4
+  - wb97x-d
+  - def2-svp
+  - scf_default
+- - energy
+  - dftd3
+  - b3lyp-d3(bj)
+  - null
+  - scf_default
+- - energy
+  - psi4
+  - hf
+  - aug-cc-pvdz
+  - scf_default
+- - energy
+  - psi4
+  - hf
+  - cc-pvtz
+  - scf_default
+- - energy
+  - psi4
+  - hf
+  - def2-tzvp
+  - scf_default
+- - energy
+  - psi4
+  - pbe
+  - aug-cc-pvdz
+  - scf_default
+- - energy
+  - psi4
+  - pbe0
+  - def2-tzvp
+  - scf_default
+- - energy
+  - psi4
+  - b2plyp
+  - aug-cc-pvtz
+  - scf_default
+- - energy
+  - psi4
+  - wb97x-d
+  - def2-tzvp
+  - scf_default
+- - energy
+  - dftd3
+  - b2plyp-d3m(bj)
+  - null
+  - scf_default
+- - energy
+  - psi4
+  - wb97x-d
+  - sto-3g
+  - scf_default
+- - energy
+  - dftd3
+  - b3lyp-d3m(bj)
+  - null
+  - scf_default
+- - energy
+  - dftd3
+  - b2plyp-d3
+  - null
+  - scf_default
+- - energy
+  - dftd3
+  - b3lyp-d3
+  - null
+  - scf_default
+- - energy
+  - psi4
+  - pbe0
+  - aug-cc-pvdz
+  - scf_default
+- - energy
+  - psi4
+  - hf
+  - sto-3g
+  - scf_default
+- - energy
+  - psi4
+  - pbe
+  - def2-tzvp
+  - scf_default
+- - energy
+  - psi4
+  - wb97m-v
+  - aug-cc-pvdz
+  - scf_default
+- - energy
+  - psi4
+  - b2plyp
+  - aug-cc-pvdz
+  - scf_default
+- - energy
+  - psi4
+  - wb97m-v
+  - def2-tzvp
+  - scf_default
+- - energy
+  - psi4
+  - b3lyp
+  - sto-3g
+  - scf_default
+- - energy
+  - psi4
+  - pbe
+  - aug-cc-pvtz
+  - scf_default
+- - energy
+  - psi4
+  - pbe0
+  - aug-cc-pvtz
+  - scf_default
+- - energy
+  - psi4
+  - hf
+  - def2-svp
+  - scf_default
+- - energy
+  - psi4
+  - pbe0
+  - sto-3g
+  - scf_default
+- - energy
+  - psi4
+  - wb97m-v
+  - aug-cc-pvtz
+  - scf_default
+- - energy
+  - psi4
+  - wb97m-v
+  - sto-3g
+  - scf_default
+- - energy
+  - dftd3
+  - b2plyp-d3m
+  - null
+  - scf_default
+history_keys:
+- driver
+- program
+- method
+- basis
+- keywords
+id: '200'
+kvs: []
+labels:
+- energy
+name: QM7b-T
+plaintext_size: '7'
+provenance: {}
+sampling: MD 350K
+tagline: Small organic molecules with up to 7 heavy atoms thermalized at 350K.
+tags:
+- organic
+- GDB
+theory_level: HF, MP2, CCSD(T)
+view_available: true
+view_url_hdf5: https://zenodo.org/record/3588335/files/200.hdf5.gz?download=1
+view_url_plaintext: https://zenodo.org/record/3588335/files/200.tar.gz?download=1
+visibility: true

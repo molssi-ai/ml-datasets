@@ -1,0 +1,101 @@
+alias_keywords: {}
+blake2b_checksum: 6052d65cf260aea5bcc1017bdb3d14845d2c11e591fd83e784fa540141880c7eb8639eeb68ca3a9cbe6ecce114e161551c9638f0c51ff788a1e0af74eefa6dea
+citations:
+- acs_citation: Ramakrishnan, R.; Dral, P. O.; Rupp, M. &amp; Von Lilienfeld, O. A.
+    Quantum chemistry structures and properties of 134 kilo molecules<em>Sci. Data,
+    </em><b>2014</b><i>, 1</i>, 140022.
+  bibtex: "\n@article{ramakrishnan2014quantum,\n  title={Quantum chemistry structures\
+    \ and properties of 134 kilo molecules},\n  author={Ramakrishnan, Raghunathan\
+    \ and Dral, Pavlo O and Rupp, Matthias and Von Lilienfeld, O Anatole},\n  journal={Scientific\
+    \ data},\n  volume={1},\n  pages={140022},\n  year={2014},\n  publisher={Nature\
+    \ Publishing Group}\n}\n"
+  doi: 10.1038/sdata.2014.22
+  url: https://www.nature.com/articles/sdata201422
+- acs_citation: "Sch\xFCtt, K. T.; Arbabzadah, F.; Chmiela, S.; M\xFCller, K. R. &amp;\
+    \ Tkatchenko, A. Quantum-chemical insights from deep tensor neural networks  <em>Nat.\
+    \ Commun., </em><b>2017</b><i>, 8</i>, 13890."
+  bibtex: "\n@article{schutt2017quantum,\n  title={Quantum-chemical insights from\
+    \ deep tensor neural networks},\n  author={Sch{\"u}tt, Kristof T and Arbabzadah,\
+    \ Farhad and Chmiela, Stefan and M{\"u}ller, Klaus R and Tkatchenko, Alexandre},\n\
+    \  journal={Nature communications},\n  volume={8},\n  pages={13890},\n  year={2017},\n\
+    \  publisher={Nature Publishing Group}\n}\n"
+  doi: 10.1038/ncomms13890
+  url: https://www.nature.com/articles/ncomms13890
+- acs_citation: "Sch\xFCtt, K.; Kindermans, P.-J.; Sauceda Felix, H. E.; Chmiela,\
+    \ S.; Tkatchenko, A. &amp; M\xFCller, K.-R. Guyon, I.; Luxburg, U. V.; Bengio,\
+    \ S.; Wallach, H.; Fergus, R.; Vishwanathan, S. &amp; Garnett, R. <i>(Eds.)</i>\
+    \ SchNet: A continuous-filter convolutional neural network for modeling quantum\
+    \ interactions. <em>Adv. Neural Inf. Process. Syst. 30, </em><b>2017</b>, 991-1001."
+  bibtex: '
+
+    @incollection{NIPS2017_6700,
+
+    author = {Sch{"{u}}tt, Kristof and Kindermans, Pieter-Jan and {Sauceda Felix},
+    Huziel Enoc and Chmiela, Stefan and Tkatchenko, Alexandre and M{"{u}}ller, Klaus-Robert},
+
+    booktitle = {Adv. Neural Inf. Process. Syst. 30},
+
+    editor = {Guyon, I and Luxburg, U V and Bengio, S and Wallach, H and Fergus, R
+    and Vishwanathan, S and Garnett, R},
+
+    pages = {991--1001},
+
+    publisher = {Curran Associates, Inc.},
+
+    title = {{SchNet: A continuous-filter convolutional neural network for modeling
+    quantum interactions}},
+
+    url = {http://papers.nips.cc/paper/6700-schnet-a-continuous-filter-convolutional-neural-network-for-modeling-quantum-interactions.pdf},
+
+    year = {2017}
+
+    }
+
+    '
+  doi:
+  - null
+  url:
+  - https://papers.nips.cc/paper/6700-schnet-a-continuous-filter-convolutional-neural-network-for-modeling-quantum-interactions
+collection: dataset
+data_points: 640,982
+default_benchmark: null
+default_driver: energy
+default_keywords: {}
+default_program: null
+default_units: kcal / mol
+description: Molecular dynamics trajectories of 129 isomers of C<sub>7</sub>H<sub>10</sub>O<sub>2</sub>,
+  each containing 5,000 snapshots at a resolution of 1 fs. All molecules are neutral
+  singlets. Calculations are performed at the PBE-TS level of theory. This dataset
+  was sourced from <a href="http://quantum-machine.org/datasets/">quantum-machine.org</a>.
+elements:
+- C
+- H
+- O
+group: default
+hdf5_size: '648'
+history: []
+history_keys:
+- driver
+- program
+- method
+- basis
+- keywords
+id: '216'
+kvs: []
+labels:
+- energy
+- gradient
+name: ISO-17
+plaintext_size: '496'
+provenance: {}
+sampling: MD ???K
+tagline: Molecular dynamics trajectories of isomers of C7O2H10
+tags:
+- MD
+- molecular dynamics
+- organic
+theory_level: DFT
+view_available: true
+view_url_hdf5: https://zenodo.org/record/3585907/files/216.hdf5.gz?download=1
+view_url_plaintext: https://zenodo.org/record/3585907/files/216.tar.gz?download=1
+visibility: true

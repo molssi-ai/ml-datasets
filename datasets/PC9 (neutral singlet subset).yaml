@@ -1,0 +1,69 @@
+alias_keywords: {}
+blake2b_checksum: a0d3721980aa64927e323e70a217480441ccb9eccb310b5babbc2e2fd0bf9caaf7f360b985ba3ed7fbd310462ba17896a21dbfd25005357b5d7c39ec1061a223
+citations:
+- acs_citation: 'Nakata, M. &amp; Shimazaki, T. PubChemQC project: A large-scale first-principles
+    electronic structure database for data-driven chemistry. <em>J. Chem. Inf. Model.,
+    </em><b>2017</b><i>, 57</i>, 1300-1308.'
+  bibtex: "\n@article{nakata2017pubchemqc,\n  title={PubChemQC project: A large-scale\
+    \ first-principles electronic structure database for data-driven chemistry},\n\
+    \  author={Nakata, Maho and Shimazaki, Tomomi},\n  journal={Journal of chemical\
+    \ information and modeling},\n  volume={57},\n  number={6},\n  pages={1300--1308},\n\
+    \  year={2017},\n  publisher={ACS Publications}\n}\n"
+  doi: 10.1021/acs.jcim.7b00083
+  url: https://pubs.acs.org/doi/abs/10.1021/acs.jcim.7b00083
+- acs_citation: "Glavatskikh, M.; Leguy, J.; Hunault, G.; Cauchy, T. &amp; Da Mota,\
+    \ B. Dataset\u2019s chemical diversity limits the generalizability of machine\
+    \ learning predictions. <em>J. Cheminformatics, </em><b>2019</b><i>, 11</i>, 69."
+  bibtex: "\n@article{glavatskikh2019dataset,\n  title={Dataset\u2019s chemical diversity\
+    \ limits the generalizability of machine learning predictions},\n  author={Glavatskikh,\
+    \ Marta and Leguy, Jules and Hunault, Gilles and Cauchy, Thomas and Da Mota, Benoit},\n\
+    \  journal={J. Cheminformatics},\n  volume={11},\n  number={1},\n  pages={69},\n\
+    \  year={2019},\n  publisher={Springer}\n}\n"
+  doi: 10.1186/s13321-019-0391-2
+  url: https://jcheminf.biomedcentral.com/articles/10.1186/s13321-019-0391-2
+collection: dataset
+data_points: 93,883
+default_benchmark: null
+default_driver: energy
+default_keywords: {}
+default_program: null
+default_units: kcal / mol
+description: A subset of PC9 contaning only neutral singlets. See the PC9 description
+  for more information.
+elements:
+- C
+- H
+- F
+- N
+- O
+group: default
+hdf5_size: '75'
+history: []
+history_keys:
+- driver
+- program
+- method
+- basis
+- keywords
+id: '226'
+kvs: []
+labels:
+- energy
+- charges
+- homo
+- lumo
+- homo-1
+- lumo+1
+name: PC9 (neutral singlet subset)
+plaintext_size: '54'
+provenance: {}
+sampling: Minima
+tagline: A subset of PC9 contaning only neutral singlets.
+tags:
+- organic
+- pubchem
+theory_level: DFT
+view_available: false
+view_url_hdf5: https://zenodo.org/record/3588370/files/226.hdf5.gz?download=1
+view_url_plaintext: https://zenodo.org/record/3588370/files/226.tar.gz?download=1
+visibility: true

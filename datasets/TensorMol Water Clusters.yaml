@@ -1,0 +1,110 @@
+alias_keywords:
+  psi4:
+    scf_default: '1'
+  qchem:
+    default: '4'
+citations:
+- acs_citation: 'Herr, J. E.; Yao, K.; McIntyre, R.; Toth, D. W. &amp; Parkhill, J.
+    Metadynamics for training neural network model chemistries: A competitive assessment.
+    <em>J. Chem. Phys., </em><b>2018</b><i>, 148</i>, 241710.'
+  bibtex: "\n@article{herr2018metadynamics,\n  title={Metadynamics for training neural\
+    \ network model chemistries: A competitive assessment},\n  author={Herr, John\
+    \ E and Yao, Kun and McIntyre, Ryker and Toth, David W and Parkhill, John},\n\
+    \  journal={The Journal of chemical physics},\n  volume={148},\n  number={24},\n\
+    \  pages={241710},\n  year={2018},\n  publisher={AIP Publishing}\n}\n"
+  doi: 10.1063/1.5020067
+  url: https://aip.scitation.org/doi/10.1063/1.5020067
+- acs_citation: 'Yao, K.; Herr, J. E.; Toth, D. W.; Mckintyre, R. &amp; Parkhill,
+    J. The TensorMol-0.1 model chemistry: A neural network augmented with long-range
+    physics. <em>Chem. Sci., </em><b>2018</b><i>, 9</i>, 2261-2269.'
+  bibtex: "\n@article{yao2018tensormol,\n  title={The TensorMol-0.1 model chemistry:\
+    \ A neural network augmented with long-range physics},\n  author={Yao, Kun and\
+    \ Herr, John E and Toth, David W and Mckintyre, Ryker and Parkhill, John},\n \
+    \ journal={Chemical science},\n  volume={9},\n  number={8},\n  pages={2261--2269},\n\
+    \  year={2018},\n  publisher={Royal Society of Chemistry}\n}\n"
+  doi: ''
+  url: https://pubs.rsc.org/en/content/articlelanding/2018/SC/C7SC04934J
+collection: dataset
+data_points: 354,145
+default_benchmark: null
+default_driver: gradient
+default_keywords:
+  psi4: scf_default
+  qchem: default
+default_program: psi4
+default_units: kcal / mol
+description: "Small water clusters of between 1 and 21 molecules, sampled using the\
+  \ metadynamics strategy (described in the citations). Energies, gradients, and dipole\
+  \ moments are provided at the \u03C9B97X-D/6-311G** level of theory. Entries with\
+  \ the \"bowlk\" suffix were sampled subject to a restraining spring force with a\
+  \ force constant of either 0.07 or 0.1 Hartree/Angstrom<sup>2</sup>."
+elements:
+- H
+- O
+group: default
+history:
+- - gradient
+  - dftd3
+  - pbe-d3m(bj)
+  - null
+  - scf_default
+- - gradient
+  - dftd3
+  - b3lyp-d3m(bj)
+  - null
+  - scf_default
+- - gradient
+  - psi4
+  - b3lyp
+  - def2-tzvp
+  - scf_default
+- - gradient
+  - qchem
+  - wb97x-d
+  - 6-311g**
+  - default
+- - gradient
+  - psi4
+  - hf
+  - def2-tzvp
+  - scf_default
+- - gradient
+  - psi4
+  - wb97m-v
+  - def2-tzvp
+  - scf_default
+- - gradient
+  - psi4
+  - pbe
+  - def2-tzvp
+  - scf_default
+- - gradient
+  - psi4
+  - svwn
+  - def2-tzvp
+  - scf_default
+history_keys:
+- driver
+- program
+- method
+- basis
+- keywords
+id: '234'
+kvs: []
+labels:
+- energy
+- gradient
+- dipole moment
+name: TensorMol Water Clusters
+provenance: {}
+sampling: Metadynamics 600K
+tagline: Clusters of 1 to 21 water molecules, sampled with metadynamics.
+tags:
+- water
+- tensormol
+theory_level: DFT
+view_available: false
+view_metadata: null
+view_url_hdf5: null
+view_url_plaintext: null
+visibility: true

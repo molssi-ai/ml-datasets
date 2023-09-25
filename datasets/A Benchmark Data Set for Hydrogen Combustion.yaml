@@ -1,0 +1,76 @@
+alias_keywords: {}
+citations:
+- acs_citation: null
+  bibtex: '
+
+    @article{https://doi.org/10.34974/0jr1-pb24,
+
+    doi = {10.34974/0JR1-PB24},
+
+    url = {https://github.com/THGLab/H2COMBUSTION_DATA},
+
+    author = {Das, Akshaya and Stein, Christopher J. and Heidar-Zadeh, Farnaz and
+    Bertels, Luke and Liu, Meili and Guan, Xingyi and Haghighatlari, Mojtaba and Li,
+    Jie and Zhang, Oufan and Hao, Hongxia and Leven, Itai and Head-Gordon, Martin
+    and Head-Gordon, Teresa},
+
+    keywords = {hydrogen combustion reactions, Normal Mode simulation, AIMD simulations,
+    IRC simulations, deep learning},
+
+    language = {en},
+
+    title = {A Benchmark Data Set for Hydrogen Combustion},
+
+    publisher = {Molecular Sciences Software Institute},
+
+    year = {2021}
+
+    }
+
+    '
+  doi: 10.34974/0jr1-pb24
+  url: https://doi.org/10.34974/0jr1-pb24
+collection: dataset
+data_points: 361,803
+default_benchmark: null
+default_driver: energy
+default_keywords: {}
+default_program: null
+default_units: kcal / mol
+description: "This dataset involves the intrinsic reaction coordinate (IRC) calculations\
+  \ with \n    ab initio MD simulations and normal mode displacement calculations\
+  \ to more extensively cover the \n    potential energy surface for 19 reaction channels\
+  \ for hydrogen combustion."
+elements:
+- H
+- O
+group: default
+hdf5_size: '420'
+history: []
+history_keys:
+- driver
+- program
+- method
+- basis
+- keywords
+id: '325'
+kvs: []
+labels:
+- H2 combustion reaction
+- IRC simulation
+- AIMD simulation
+- normal mode simulation
+name: A Benchmark Data Set for Hydrogen Combustion
+plaintext_size: '0'
+provenance: {}
+sampling: IRC, AIMD, and normal mode simulations
+tagline: A Benchmark Data Set for Hydrogen Combustion
+tags:
+- cheminformatics
+- density functional theory
+- method development
+theory_level: wB97X-V/cc-pVTZ
+view_available: false
+view_url_hdf5: https://zenodo.org/record/5544589/files/325.h5?download=1
+view_url_plaintext: null
+visibility: true

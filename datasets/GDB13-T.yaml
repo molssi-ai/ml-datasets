@@ -1,0 +1,91 @@
+alias_keywords:
+  psi4:
+    scf_default: '1'
+blake2b_checksum: eda25deb4e694e6004a01a43c9188bd6064635d4e8dc6c66ea40e773b88048683b21cdd9b61a05b44afe1dd47a093e7663fad17841e9e9fa531bbb108dc8a492
+citations:
+- acs_citation: Welborn, M.; Cheng, L. &amp; Miller III, T. F. Transferability in
+    machine learning for electronic structure via the molecular orbital basis. <em>J.
+    Chem. Theory Comput., </em><b>2018</b><i>, 14</i>, 4772-4779.
+  bibtex: "\n@article{welborn2018transferability,\n  title={Transferability in machine\
+    \ learning for electronic structure via the molecular orbital basis},\n  author={Welborn,\
+    \ Matthew and Cheng, Lixue and Miller III, Thomas F},\n  journal={Journal of chemical\
+    \ theory and computation},\n  volume={14},\n  number={9},\n  pages={4772--4779},\n\
+    \  year={2018},\n  publisher={ACS Publications}\n}\n"
+  doi: 10.1021/acs.jctc.8b00636
+  url: https://pubs.acs.org/doi/abs/10.1021/acs.jctc.8b00636
+- acs_citation: 'Cheng, L.; Welborn, M.; Christensen, A. S. &amp; Miller III, T. F.
+    A universal density matrix functional from molecular orbital-based machine learning:
+    Transferability across organic molecules. <em>J. Chem. Phys., </em><b>2019</b><i>,
+    150</i>, 131103.'
+  bibtex: "\n@article{cheng2019universal,\n  title={A universal density matrix functional\
+    \ from molecular orbital-based machine learning: Transferability across organic\
+    \ molecules},\n  author={Cheng, Lixue and Welborn, Matthew and Christensen, Anders\
+    \ S and Miller III, Thomas F},\n  journal={The Journal of chemical physics},\n\
+    \  volume={150},\n  number={13},\n  pages={131103},\n  year={2019},\n  publisher={AIP\
+    \ Publishing}\n}\n"
+  doi: 10.1063/1.5088393
+  url: https://aip.scitation.org/doi/full/10.1063/1.5088393
+collection: dataset
+data_points: 6,000
+default_benchmark: null
+default_driver: energy
+default_keywords:
+  psi4: scf_default
+default_program: psi4
+default_units: kcal / mol
+description: 1,000 small organic molecules with up to 13 heavy atoms sampled from
+  GDB-13 and thermalized with 350K MD at the B3LYP/6-31g* level of theory. Energies
+  are provided at the HF/cc-pVTZ and MP2/cc-pVTZ levels of theory. All molecules are
+  neutral singlets. This dataset was sourced from <a href="https://data.caltech.edu/records/1177">data.caltech.edu</a>.
+elements:
+- C
+- H
+- Cl
+- N
+- O
+- S
+group: default
+hdf5_size: '5'
+history:
+- - energy
+  - psi4
+  - hf
+  - sto-3g
+  - scf_default
+- - energy
+  - psi4
+  - pbe
+  - sto-3g
+  - scf_default
+- - energy
+  - psi4
+  - svwn
+  - sto-3g
+  - scf_default
+- - energy
+  - psi4
+  - hf
+  - cc-pvtz
+  - scf_default
+history_keys:
+- driver
+- program
+- method
+- basis
+- keywords
+id: '154'
+kvs: []
+labels:
+- energy
+name: GDB13-T
+plaintext_size: '4'
+provenance: {}
+sampling: MD 350K
+tagline: Small organic molecules with up to 13 heavy atoms thermalized at 350K.
+tags:
+- organic
+theory_level: HF, MP2
+view_available: true
+view_url_hdf5: https://zenodo.org/record/3588338/files/154.hdf5.gz?download=1
+view_url_plaintext: https://zenodo.org/record/3588338/files/154.tar.gz?download=1
+visibility: true

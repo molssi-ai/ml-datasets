@@ -1,0 +1,98 @@
+alias_keywords: {}
+citations:
+- acs_citation: Smith, J.S., Nebgen, B.T., Zubatyuk, R. et al. Approaching coupled
+    cluster accuracy with a general-purpose neural network potential through transfer
+    learning. <em>Nature Communications</em> <b>2019</b><i>, 10</i>, 2903.
+  bibtex: '
+
+    @article{Smith2019NatComm,
+
+    journal = {Nature Communications},
+
+    pages = {1},
+
+    publisher = {Nature Publishing Group},
+
+    title = {Approaching coupled cluster accuracy with a general-purpose neural network
+    potential through transfer learning},
+
+    volume = {10},
+
+    year = {2019}
+
+    }
+
+    '
+  doi: 10.1038/s41467-019-10827-4
+  url: https://doi.org/10.1038/s41467-019-10827-4
+- acs_citation: Zubatyuk, R.; Smith, J. S.; Leszczynski, J.; Isayev, O. Accurate and
+    Transferable Multitask Prediction of Chemical Properties with an Atoms-in-Molecules
+    Neural Network. <em>Science Advances</em> <b>2019</b><i>, 5</i>, eaav6490.
+  bibtex: '
+
+    @article{Zubatyuk2019ScAdv,
+
+    author = {Zubatyuk, Roman and Smith, Justin S. and Leszczynski, Jerzy and Isayev,
+    Olexandr},
+
+    journal = {Science Advances},
+
+    pages = {eaav6490},
+
+    publisher = {American Association for the Advancement of Science},
+
+    title = {{Accurate and transferable multitask prediction of chemical properties
+    with an atoms-in-molecules neural network}},
+
+    volume = {5},
+
+    year = {2019}
+
+    }
+
+    '
+  doi: 10.1126/sciadv.aav6490
+  url: http://advances.sciencemag.org
+collection: dataset
+data_points: 489,571
+default_benchmark: null
+default_driver: energy
+default_keywords: {}
+default_program: null
+default_units: kcal / mol
+description: The ANI-1ccx data set is comprised of 489571 subsampled structures chosen
+  based on active learning sampling methods. Properties involve coupled cluster total
+  energies and correlation energies on molecules constructed from C, H, N, and O atoms.
+elements:
+- C
+- H
+- N
+- O
+group: default
+hdf5_size: 3,734
+history: []
+history_keys:
+- driver
+- program
+- method
+- basis
+- keywords
+id: '293'
+kvs: []
+labels:
+- energy
+- correlation energies
+name: ANI-1ccx
+plaintext_size: '0'
+provenance: {}
+sampling: MD,NMS,DS,TS
+tagline: Coupled cluster properties for molecules
+tags:
+- cheminformatics
+- coupled cluster
+- method development
+theory_level: CCSD(T)*
+view_available: true
+view_url_hdf5: https://zenodo.org/record/4081692/files/293.hdf5.gz?download=1
+view_url_plaintext: null
+visibility: true

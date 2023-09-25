@@ -1,0 +1,108 @@
+alias_keywords:
+  psi4:
+    scf_default: '1'
+blake2b_checksum: 28c7b647e723e955624a2173f229465793e8341c268616d614541b58d605561504d893656609a699f8c16446bddc09b9e5a784f12171381088c763d8ca05b452
+citations:
+- acs_citation: 'Smith, J. S.; Nebgen, B.; Lubbers, N.; Isayev, O. &amp; Roitberg,
+    A. E. Less is more: Sampling chemical space with active learning. <em>J. Chem.
+    Phys.,</em> <b>2018</b><i>, 148</i>, 241733.'
+  bibtex: "\n@article{smith2018less,\n  title={Less is more: Sampling chemical space\
+    \ with active learning},\n  author={Smith, Justin S and Nebgen, Ben and Lubbers,\
+    \ Nicholas and Isayev, Olexandr and Roitberg, Adrian E},\n  journal={The Journal\
+    \ of chemical physics},\n  volume={148},\n  number={24},\n  pages={241733},\n\
+    \  year={2018},\n  publisher={AIP Publishing}\n}\n"
+  doi: 10.1063/1.5023802
+  url: https://aip.scitation.org/doi/full/10.1063/1.5023802
+collection: dataset
+data_points: 1,791
+default_benchmark: null
+default_driver: energy
+default_keywords:
+  psi4: scf_default
+default_program: psi4
+default_units: kcal / mol
+description: "A member of the COMP6 benchmark set, this dataset contains MD trajectories\
+  \ generated using the ANI-1x potential at 300K for 14 drug molecules and two peptides.\
+  \ Each trajectory is 128 frames subsampled from 1 ns of dynamics. Reference calculations\
+  \ are performed at the \u03C9B97x/6-31g* level of theory. All molecules are neutral\
+  \ singlets. This dataset was sourced from <a href=\"https://github.com/isayev/COMP6\"\
+  >GitHub</a>."
+elements:
+- C
+- H
+- N
+- O
+group: default
+hdf5_size: '8'
+history:
+- - energy
+  - psi4
+  - wb97m
+  - def2-tzvp
+  - scf_default
+- - energy
+  - psi4
+  - svwn
+  - def2-tzvp
+  - scf_default
+- - energy
+  - psi4
+  - pbe
+  - def2-tzvp
+  - scf_default
+- - energy
+  - psi4
+  - b3lyp
+  - def2-tzvp
+  - scf_default
+- - energy
+  - psi4
+  - hf
+  - def2-tzvp
+  - scf_default
+- - energy
+  - dftd3
+  - wb97m-d3(bj)
+  - null
+  - scf_default
+- - energy
+  - dftd3
+  - b3lyp-d3m(bj)
+  - null
+  - scf_default
+- - energy
+  - dftd3
+  - pbe-d3m(bj)
+  - null
+  - scf_default
+history_keys:
+- driver
+- program
+- method
+- basis
+- keywords
+id: '205'
+kvs: []
+labels:
+- energy
+- gradient
+- charges
+- dipole
+- spin density
+name: COMP6 ANI-MD
+plaintext_size: '8'
+provenance: {}
+sampling: MD 300K
+tagline: Benchmark containing MD trajectories from the ANI-1x potential.
+tags:
+- COMP6
+- molecular dynamics
+- md
+- drug
+- peptide
+- organic
+theory_level: DFT
+view_available: true
+view_url_hdf5: https://zenodo.org/record/3588341/files/205.hdf5.gz?download=1
+view_url_plaintext: https://zenodo.org/record/3588341/files/205.tar.gz?download=1
+visibility: true

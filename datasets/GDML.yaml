@@ -1,0 +1,104 @@
+alias_keywords: {}
+blake2b_checksum: 70e276c67eb48db01332b338b67676a5829808d011983af26bc6d4fcfddcbe663f263f02074e49a56a3973cf9df12b3dcd96f97994954cd4a8fc67a64b349b42
+citations:
+- acs_citation: "Sch\xFCtt, K. T.; Arbabzadah, F.; Chmiela, S.; M\xFCller, K. R. &amp;\
+    \ Tkatchenko, A. Quantum-chemical insights from deep tensor neural networks  <em>Nat.\
+    \ Commun., </em><b>2017</b><i>, 8</i>, 13890."
+  bibtex: "\n@article{schutt2017quantum,\n  title={Quantum-chemical insights from\
+    \ deep tensor neural networks},\n  author={Sch{\"u}tt, Kristof T and Arbabzadah,\
+    \ Farhad and Chmiela, Stefan and M{\"u}ller, Klaus R and Tkatchenko, Alexandre},\n\
+    \  journal={Nature communications},\n  volume={8},\n  pages={13890},\n  year={2017},\n\
+    \  publisher={Nature Publishing Group}\n}\n"
+  doi: 10.1038/ncomms13890
+  url: https://www.nature.com/articles/ncomms13890
+- acs_citation: "Chmiela, S.; Tkatchenko, A.; Sauceda, H. E.; Poltavsky, I.; Sch\xFC\
+    tt, K. T. &amp; M\xFCller, K.-R. Machine learning of accurate energy-conserving\
+    \ molecular force fields <em>Sci. Adv., </em><b>2017</b><i>, 3</i>, e1603015."
+  bibtex: "\n@article{chmiela2017machine,\n  title={Machine learning of accurate energy-conserving\
+    \ molecular force fields},\n  author={Chmiela, Stefan and Tkatchenko, Alexandre\
+    \ and Sauceda, Huziel E and Poltavsky, Igor and Sch{\"u}tt, Kristof T and M{\"\
+    u}ller, Klaus-Robert},\n  journal={Science advances},\n  volume={3},\n  number={5},\n\
+    \  pages={e1603015},\n  year={2017},\n  publisher={American Association for the\
+    \ Advancement of Science}\n}\n"
+  doi: 10.1126/sciadv.1603015
+  url: https://advances.sciencemag.org/content/3/5/e1603015
+- acs_citation: "Chmiela, S.; Sauceda, H. E.; M\xFCller, K.-R. &amp; Tkatchenko, A.\
+    \ Towards exact molecular dynamics simulations with machine-learned force fields.\
+    \ <em>Nat. Commun., </em><b>2018</b><i>, 9</i>, 3887."
+  bibtex: "\n@article{chmiela2018towards,\n  title={Towards exact molecular dynamics\
+    \ simulations with machine-learned force fields},\n  author={Chmiela, Stefan and\
+    \ Sauceda, Huziel E and M{\"u}ller, Klaus-Robert and Tkatchenko, Alexandre},\n\
+    \  journal={Nature communications},\n  volume={9},\n  number={1},\n  pages={3887},\n\
+    \  year={2018},\n  publisher={Nature Publishing Group}\n}\n"
+  doi: 10.1038/s41467-018-06169-2
+  url: https://www.nature.com/articles/s41467-018-06169-2
+- acs_citation: "Chmiela, S.; Sauceda, H. E.; Poltavsky, I.; M\xFCller, K.-R. &amp;\
+    \ Tkatchenko, A. sGDML: Constructing accurate and data efficient molecular force\
+    \ fields using machine learning. <em>Comput. Phys. Commun., </em><b>2019</b><i>,\
+    \ 240</i>, 38-45."
+  bibtex: "\n@article{chmiela2019,\ntitle = {sGDML: Constructing accurate and data\
+    \ efficient molecular force fields using machine learning},\nauthor = {Chmiela,\
+    \ Stefan and Sauceda, Huziel E. and Poltavsky, Igor and M\xFCller, Klaus-Robert\
+    \ and Tkatchenko, Alexandre},\njournal = {Computer Physics Communications},\n\
+    volume = {240},\npages = {38-45},\nyear = {2019},\ndoi = {10.1016/j.cpc.2019.02.007}}\n"
+  doi: 10.1016/j.cpc.2019.02.007
+  url: https://www.sciencedirect.com/science/article/pii/S0010465519300591?via%3Dihub
+- acs_citation: "Sauceda, H. E.; Chmiela, S.; Poltavsky, I.; M\xFCller, K.-R. &amp;\
+    \ Tkatchenko, A. Molecular force fields with gradient-domain machine learning:\
+    \ Construction and application to dynamics of small molecules with coupled cluster\
+    \ forces. <em>J. Chem. Phys., </em><b>2019</b><i>, 150</i>, 114102. "
+  bibtex: "\n@article{sauceda2019,\ntitle = {Molecular force fields with gradient-domain\
+    \ machine learning: Construction and application to dynamics of small molecules\
+    \ with coupled cluster forces},\nauthor = {Sauceda, Huziel E. and Chmiela, Stefan\
+    \ and Poltavsky, Igor and M\xFCller, Klaus-Robert and Tkatchenko, Alexandre},\n\
+    journal = {The Journal of Chemical Physics},\nvolume = {150},\nnumber = {11},\n\
+    pages = {114102},\nyear = {2019},\ndoi = {10.1063/1.5078687}}\n"
+  doi: 10.1063/1.5078687
+  url: https://aip.scitation.org/doi/10.1063/1.5078687
+collection: dataset
+data_points: 3,875,468
+default_benchmark: null
+default_driver: energy
+default_keywords: {}
+default_program: null
+default_units: kcal / mol
+description: 'Molecular dynamics trajectories of small molecules: benzene, uracil,
+  naphthalene, aspirin, salicylic acid malonaldehyde, ethanol, toluene, paracetamol,
+  azobenzene, aspirin, toluene, and ethanol. Four levels of theory are available:
+  PBE-TS, CCSD/cc-pVDZ, CCSD(T)/cc-pVDZ, and CCSD(T)/cc-pVTZ. Trajectories at the
+  DFT level contain 10<sup>5</sup>-10<sup>6</sup> geometries. Trajectories at the
+  wavefunction level contain 10<sup>3</sup> geometries. All molecules are neutral
+  singlets. This dataset was sourced from <a href="http://quantum-machine.org/datasets/">quantum-machine.org</a>.'
+elements:
+- C
+- H
+- N
+- O
+group: default
+hdf5_size: 2,704
+history: []
+history_keys:
+- driver
+- program
+- method
+- basis
+- keywords
+id: '219'
+kvs: []
+labels:
+- energy
+- gradient
+name: GDML
+plaintext_size: 2,114
+provenance: {}
+sampling: MD 500K
+tagline: Molecular dynamics trajectories of small molecules
+tags:
+- MD
+- molecular dynamics
+- organic
+theory_level: DFT, CCSD, CCSD(T)
+view_available: true
+view_url_hdf5: https://zenodo.org/record/3585908/files/219.hdf5.gz?download=1
+view_url_plaintext: https://zenodo.org/record/3585908/files/219.tar.gz?download=1
+visibility: true
