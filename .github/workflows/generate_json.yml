@@ -35,18 +35,9 @@ jobs:
 
       - name: Execute json_generator
         run: python json_generator.py
-
-      - name: Commit json file
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add datasets.json
-          git commit -m "Generating new json file."
-
-      - name: Push changes to json branch
-        uses: ad-m/github-push-action@v0.6.0
+      
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          folder: json # The folder the action should deploy.
           branch: json
-
-

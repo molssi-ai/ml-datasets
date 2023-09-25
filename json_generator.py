@@ -1,10 +1,12 @@
-import yaml, glob, json
+import yaml, glob, json, os
 
-import glob
+if not os.path.isdir("./json"):
+    os.mkdir("json")
+
 dataset = {"data": []}
 for file in glob.glob("./datasets/*.yaml"):
     with open(file, 'r') as yaml_file:
         dataset['data'].append(yaml.safe_load(yaml_file))
 
-with open('datasets.json', 'w') as file:
+with open('./json/datasets.json', 'w') as file:
     file.write(json.dumps(dataset, indent=2))
